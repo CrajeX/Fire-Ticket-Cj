@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "basePrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "sprinkler_systems",
+        "fire_alarms",
+        "extinguishers",
+        "emergency_lighting",
+        "risk_assessment",
+        "maintenance"
+      ]
+    },
+    "estimatedHours": {
+      "type": "integer"
+    },
+    "specifications": {
+      "type": "richtext"
+    },
+    "quotation_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quotation-item.quotation-item",
+      "mappedBy": "service"
+    }
+  }
+}

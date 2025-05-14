@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotations",
+  "info": {
+    "singularName": "quotation",
+    "pluralName": "quotations",
+    "displayName": "Quotation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "reference": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "validUntil": {
+      "type": "date"
+    },
+    "statuss": {
+  "type": "enumeration",
+  "enum": [
+    "draft",
+    "sent",
+    "accepted",
+    "rejected",
+    "expired"
+  ]
+}
+,
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "attachments": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "quotations"
+    },
+    "quotation_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quotation-item.quotation-item",
+      "mappedBy": "quotation"
+    }
+  }
+}

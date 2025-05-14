@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "Customer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "customerType": {
+      "type": "enumeration",
+      "enum": [
+        "Commercial",
+        "Residential",
+        "Industrial"
+      ]
+    },
+    "quotations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quotation.quotation",
+      "mappedBy": "customer"
+    }
+  }
+}
