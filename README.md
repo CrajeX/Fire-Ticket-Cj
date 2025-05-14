@@ -1032,10 +1032,11 @@ X-RateLimit-Reset: 1621880340
 # Quotation System API Documentation
 
 <div align="center">
+
 <p align="center">
-  <img src="https://github.com/CrajeX/Fire-Ticket-Cj/tree/main/fire-protection-quotation/drop.jpg?raw=true" width="350" title="hover text">
-  <img src="https://github.com/CrajeX/Fire-Ticket-Cj/tree/main/fire-protection-quotation/drop.jpg?raw=true" width="350" alt="accessibility text">
-</p>
+  <img src="https://raw.githubusercontent.com/CrajeX/Fire-Ticket-Cj/main/fire-protection-quotation/drop.jpg" width="350" title="hover text">
+  <img src="https://raw.githubusercontent.com/CrajeX/Fire-Ticket-Cj/main/fire-protection-quotation/drop.jpg" width="350" alt="accessibility text">
+
 <!-- ![alt text](https://github.com/CrajeX/Fire-Ticket-Cj/tree/main/fire-protection-quotation/drop.jpg?raw=true) -->
 
 *A comprehensive REST API for managing service quotations and customer relations*
