@@ -1035,7 +1035,7 @@ X-RateLimit-Reset: 1621880340
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/CrajeX/Fire-Ticket-Cj/main/fire-protection-quotation/drop.jpg" width="350" title="hover text">
-  <img src="https://raw.githubusercontent.com/CrajeX/Fire-Ticket-Cj/main/fire-protection-quotation/drop.jpg" width="350" alt="accessibility text">
+
 
 <!-- ![alt text](https://github.com/CrajeX/Fire-Ticket-Cj/tree/main/fire-protection-quotation/drop.jpg?raw=true) -->
 
