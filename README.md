@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![alt text](https://github.com/CrajeX/Fire-Ticket-Cj/blob/main/drop.jpg?raw=true)
+![alt text](https://github.com/CrajeX/Fire-Ticket-Cj/tree/main/fire-protection-quotation/drop.jpg?raw=true)
 
 *A comprehensive REST API for managing service quotations and customer relations*
 
